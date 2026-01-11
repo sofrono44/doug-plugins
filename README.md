@@ -42,45 +42,6 @@ claude plugin install spec-to-ralph@sofrono-plugins
 
 ## Plugins
 
-### finra-review-skill
-
-**FINRA Rule 2210 compliance review for broker-dealer marketing materials.**
-
-A specialized compliance tool that analyzes marketing content against FINRA communications rules. Identifies potential regulatory issues, provides rule citations, and suggests compliant alternatives.
-
-| Skill | Description |
-|-------|-------------|
-| `finra-review` | Analyze marketing content for FINRA Rule 2210 compliance |
-
-**What it checks:**
-- Promissory language ("guaranteed returns")
-- Unbalanced claims (benefits without risks)
-- Performance presentation standards
-- Testimonial requirements
-- Social media compliance (character limits, disclosures)
-
-**Example:**
-
-```
-You: Review this for FINRA compliance:
-"Achieve consistent, market-beating returns with our AI-driven strategies."
-
-Claude:
-Issue 1: Promissory Performance Claims
-Original Text: "Achieve consistent, market-beating returns"
-Rule Citation: FINRA Rule 2210(d)(1)(B)
-Compliance Concern: This language promises guaranteed outcomes.
-Suggested Revision: "Our AI-driven strategies seek competitive risk-adjusted
-returns. Past performance is not indicative of future results."
-Risk Level: High
-```
-
-**Use case:** Before publishing marketing materials, social media posts, or client communications, run a preliminary compliance check to identify potential FINRA violations and get suggested compliant rewrites.
-
-**⚠️ Important:** This is a review aid for preliminary compliance screening. Does not replace registered principal review, FINRA filing requirements, or legal counsel.
-
----
-
 ### spec-to-ralph
 
 **The bridge between [GitHub Spec Kit](https://github.com/github/spec-kit) and [ralph-wiggum](https://github.com/anthropics/claude-code/tree/main/plugins/ralph-wiggum).**
@@ -130,33 +91,44 @@ ls spec/
 
 ---
 
-### question-storm
+## Skills
 
-**Reframe problems through rapid question generation.**
+### finra-review-skill
 
-Implements the Question Storming framework—a brainstorming technique focused on generating questions rather than answers. Uncover blind spots, challenge assumptions, and find new angles.
+**FINRA Rule 2210 compliance review for broker-dealer marketing materials.**
+
+A specialized compliance tool that analyzes marketing content against FINRA communications rules. Identifies potential regulatory issues, provides rule citations, and suggests compliant alternatives.
 
 | Skill | Description |
 |-------|-------------|
-| `brainstorm` | Rapid-fire question generation (divergent) |
-| `workshop` | Interactive session exploring questions deeply |
+| `finra-review` | Analyze marketing content for FINRA Rule 2210 compliance |
+
+**What it checks:**
+- Promissory language ("guaranteed returns")
+- Unbalanced claims (benefits without risks)
+- Performance presentation standards
+- Testimonial requirements
+- Social media compliance (character limits, disclosures)
 
 **Example:**
 
 ```
-You: Help me question-storm our API rate limiting approach
+You: Review this for FINRA compliance:
+"Achieve consistent, market-beating returns with our AI-driven strategies."
 
-Claude: Here are 15 questions to reframe your thinking:
-
-1. What happens when legitimate users hit the limit?
-2. Are all endpoints equally valuable to protect?
-3. What if rate limits encouraged bad patterns (batching vs real-time)?
-4. How do competitors handle this?
-5. What's the cost of NOT rate limiting vs over-limiting?
-...
+Claude:
+Issue 1: Promissory Performance Claims
+Original Text: "Achieve consistent, market-beating returns"
+Rule Citation: FINRA Rule 2210(d)(1)(B)
+Compliance Concern: This language promises guaranteed outcomes.
+Suggested Revision: "Our AI-driven strategies seek competitive risk-adjusted
+returns. Past performance is not indicative of future results."
+Risk Level: High
 ```
 
-**Use case:** Stuck on a technical decision? Run a question storm to surface what you haven't considered: "What would break if we chose X?" "Who else is affected?" "What are we assuming?"
+**Use case:** Before publishing marketing materials, social media posts, or client communications, run a preliminary compliance check to identify potential FINRA violations and get suggested compliant rewrites.
+
+**⚠️ Important:** This is a review aid for preliminary compliance screening. Does not replace registered principal review, FINRA filing requirements, or legal counsel.
 
 ---
 
@@ -197,6 +169,36 @@ Ready to explore Combine? (yes/skip)
 ```
 
 **Use case:** Improving an existing feature? Run a SCAMPER workshop on your current implementation to systematically explore every angle for improvement.
+
+---
+
+### question-storm
+
+**Reframe problems through rapid question generation.**
+
+Implements the Question Storming framework—a brainstorming technique focused on generating questions rather than answers. Uncover blind spots, challenge assumptions, and find new angles.
+
+| Skill | Description |
+|-------|-------------|
+| `brainstorm` | Rapid-fire question generation (divergent) |
+| `workshop` | Interactive session exploring questions deeply |
+
+**Example:**
+
+```
+You: Help me question-storm our API rate limiting approach
+
+Claude: Here are 15 questions to reframe your thinking:
+
+1. What happens when legitimate users hit the limit?
+2. Are all endpoints equally valuable to protect?
+3. What if rate limits encouraged bad patterns (batching vs real-time)?
+4. How do competitors handle this?
+5. What's the cost of NOT rate limiting vs over-limiting?
+...
+```
+
+**Use case:** Stuck on a technical decision? Run a question storm to surface what you haven't considered: "What would break if we chose X?" "Who else is affected?" "What are we assuming?"
 
 ---
 
