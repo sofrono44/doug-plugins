@@ -1,0 +1,16 @@
+{
+  "name": "question-storm",
+  "description": "Generate rapid bursts of questions to reframe problems, uncover assumptions, and find new angles using the Question Storming framework.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Doug"
+  },
+  "license": "MIT",
+  "keywords": [
+    "brainstorming",
+    "questions",
+    "problem-solving",
+    "creativity",
+    "ideation"
+  ]
+}

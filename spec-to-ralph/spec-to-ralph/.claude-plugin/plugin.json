@@ -1,0 +1,18 @@
+{
+  "name": "spec-to-ralph",
+  "description": "Bridge GitHub Spec Kit projects to Ralph Wiggum autonomous loops. Generates optimized prompts from your spec/plan/tasks and optionally kicks off Ralph automatically.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Doug / Switchfin",
+    "url": "https://github.com/switchfin"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/switchfin/spec-to-ralph",
+  "keywords": [
+    "spec-kit",
+    "ralph-wiggum",
+    "autonomous",
+    "spec-driven-development",
+    "sdd"
+  ]
+}

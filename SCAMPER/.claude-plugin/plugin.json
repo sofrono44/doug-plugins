@@ -1,0 +1,16 @@
+{
+  "name": "scamper",
+  "description": "Generate divergent ideas using the SCAMPER framework (Substitute, Combine, Adapt, Modify, Put to other uses, Eliminate, Reverse). Ideal for brainstorming product variations, features, and strategies.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Doug"
+  },
+  "license": "MIT",
+  "keywords": [
+    "brainstorming",
+    "scamper",
+    "ideation",
+    "creativity",
+    "innovation"
+  ]
+}

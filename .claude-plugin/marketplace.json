@@ -1,0 +1,41 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "doug-plugins",
+  "description": "Custom Claude Code plugins for spec-driven development and autonomous coding workflows",
+  "owner": {
+    "name": "Doug",
+    "email": "douglasmiles@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "spec-to-ralph",
+      "description": "Bridge GitHub Spec Kit to Ralph Wiggum autonomous loops. Convert your spec-driven development artifacts (constitution, spec, plan, tasks) into optimized prompts for overnight autonomous coding.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Doug"
+      },
+      "source": "./spec-to-ralph/spec-to-ralph",
+      "category": "development"
+    },
+    {
+      "name": "question-storm",
+      "description": "Generate rapid bursts of questions to reframe problems, uncover assumptions, and find new angles using the Question Storming framework.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Doug"
+      },
+      "source": "./question-storm",
+      "category": "productivity"
+    },
+    {
+      "name": "scamper",
+      "description": "Generate divergent ideas using the SCAMPER framework (Substitute, Combine, Adapt, Modify, Put to other uses, Eliminate, Reverse). Ideal for brainstorming product variations, features, and strategies.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Doug"
+      },
+      "source": "./SCAMPER",
+      "category": "productivity"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "name": "spec-to-ralph",
+  "description": "Bridge GitHub Spec Kit to Ralph Wiggum autonomous loops. Convert your spec-driven development artifacts (constitution, spec, plan, tasks) into optimized prompts for overnight autonomous coding. One command to go from specs to working code.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Doug / Switchfin",
+    "url": "https://github.com/switchfin"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/switchfin/spec-to-ralph",
+  "homepage": "https://github.com/switchfin/spec-to-ralph",
+  "keywords": [
+    "spec-kit",
+    "ralph-wiggum",
+    "autonomous",
+    "spec-driven-development",
+    "sdd",
+    "overnight-coding",
+    "agentic"
+  ],
+  "category": "development",
+  "components": {
+    "commands": [
+      {
+        "name": "status",
+        "description": "Check project readiness for Ralph conversion"
+      },
+      {
+        "name": "generate", 
+        "description": "Generate optimized PROMPT.md from Spec Kit artifacts"
+      },
+      {
+        "name": "start",
+        "description": "Generate prompt AND start Ralph loop in one command"
+      }
+    ],
+    "skills": [
+      {
+        "name": "spec-to-ralph",
+        "description": "Reference knowledge for task sizing, prompt patterns, and tech stack detection"
+      }
+    ]
+  },
+  "dependencies": {
+    "plugins": ["ralph-wiggum@claude-plugins-official"]
+  }
+}
