@@ -16,7 +16,7 @@
 
 ---
 
-## Why doug-plugins?
+## Why sofrono-plugins?
 
 Claude Code is powerful out of the box—but these plugins take it further:
 
